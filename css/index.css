@@ -301,21 +301,19 @@ html,body{
 		}
 		
 		.add{
-			width: 40px;
-			height: 44px;
+			width: px;
+			height: px;
 			background: #009688;
 			border-radius: 50%;
-			font-size: 27px;
-			font-weight: 400;
+			font-size: 25px;
 			color: white;
-		  	padding: 5px 8px;
+		  	padding: 13px 15px  15px 15px;
 		    text-align: center;
 		    cursor: pointer;
 		    float: right;
-		    margin-top: -30px;
-		    white-space: nowrap;
-		    font-family: Verdana,sans-serif;
-		    line-height: 1.5;
+		    margin-top: -26px;
+		   	line-height: 0.9;
+		    font-family: Verdana;
 		    margin-right: 24px;
 		}
 		.add:hover{

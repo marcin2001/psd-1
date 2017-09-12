@@ -360,7 +360,7 @@ html,body{
 			width: 33.33333%;
 			height: auto;
 			float: left;
-			border: px solid black;
+			border: px solid black
 		}
 		.ul-bas:hover{
 			box-shadow: 0px 5px 10px  lightgray;

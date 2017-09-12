@@ -8,11 +8,19 @@
 	
 <body>
 	<div class="head">
+	<div class="togl" id="togl">
+			<hr class="hr">
+			<hr>
+			<hr>
+		</div>
+
 		<a href="#" class="a1 a-oll">Logo</a>
-		<a href="#" class="a2 a-oll gr">Team</a>
-		<a href="#" class="a3 a-oll gr">Work</a>
-		<a href="#" class="a4 a-oll gr">Price</a>
-		<a href="#" class="a5 a-oll gr">Contact</a>
+
+		<div class="one-burger" id="burg">
+		<a href="#" class="a2 a-oll gr e" id="a2">Team</a>
+		<a href="#" class="a3 a-oll gr e" id="a3">Work</a>
+		<a href="#" class="a4 a-oll gr e" id="a4">Price</a>
+		<a href="#" class="a5 a-oll gr e" id="a5">Contact</a>
 		<div class="burg-menu">
 		<a href="#" class="a6 a-oll gr">Dropdown</a>
 		<div class="bur">
@@ -21,10 +29,12 @@
 		<a class="Link3 lin1 ">Link</a>
 		</div>
 		</div>
+		<a href="#" class="a5 a-oll r e" id="a6">Search</a>
 		<div class="search">
 			<div class="foto-search"></div>
 		</div>
-		
+		</div>
+
 	</div>
 	<div class="back">
 		<img src="css/foto/tt.jpg" class='img1'>
@@ -126,7 +136,7 @@
 					Support
 				</li>
 				<li class="li-p4 h">
-					<h2 class="li-h2">
+					<h2 class="li-h22">
 						<i>$</i>
 						10
 					</h2>
@@ -159,7 +169,7 @@
 					Support
 				</li>
 				<li class="li-p4 h">
-					<h2 class="li-h2">
+					<h2 class="li-h22">
 						<i>$</i>
 						25
 					</h2>
@@ -192,7 +202,7 @@
 					Support
 				</li>
 				<li class="li-p4 h">
-					<h2 class="li-h2">
+					<h2 class="li-h22">
 						<i class="li-i">$</i>
 						50
 					</h2>
@@ -206,5 +216,33 @@
 		</div>
 	</div>
 	<div class="i"></div>
+
+	<script type="text/javascript">
+		var x = document.getElementById('togl');
+		var b = document.getElementById('burg');
+		var s = document.getElementsByClassName('e');
+
+		var a2 = document.getElementById('a2');
+		var a3 = document.getElementById('a3');
+		var a4 = document.getElementById('a4');
+		var a5 = document.getElementById('a5');
+		var a6 = document.getElementById('a6');
+		function tog() {
+			if(burg.style.display === 'none'){
+				burg.style.display = 'block'
+			}
+			else{
+				burg.style.display = 'none'
+			}
+			if(burg.style.display === 'block'){
+				a2.style.display = 'block';
+				a3.style.display = 'block';
+				a4.style.display = 'block';
+				a5.style.display = 'block';
+				a6.style.display = 'block';
+			}
+		}
+		x.addEventListener('click' , tog)
+	</script>
 </body>
 </html>

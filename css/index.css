@@ -10,6 +10,7 @@ html,body{
 			position: fixed;
 			background: black;
 		}
+
 		a{
 			text-decoration:none;
 			color: black;
@@ -456,6 +457,7 @@ html,body{
 			background: lightgray;
 			color:black;
 		}
+
 		@media screen and (max-width: 970px){
 			.block-basic{
 				float: none;
@@ -491,5 +493,78 @@ html,body{
 			}
 			.ul-bas{
 				border: none;
+			}
+		}
+		
+		hr{
+			display: none;
+		}
+		.r{
+			display: none;
+		}
+		@media screen and (max-width: 650px){
+		.r{
+			display: block;
+		}
+		.e{
+			display: none;
+			width: 100%;
+			color: white;
+
+		}
+		.togl{
+			width: auto;
+			height: auto;
+			padding: 6px;
+			background: black;
+			float: right;	
+			display: none;
+		}
+		.togl:hover{
+			background: white;
+	
+		}
+		.togl:hover hr{
+			background: black;
+
+		}
+		.hr{
+			margin-top: 5px
+		}
+		hr{
+			border: none;
+			width: 25px;
+			height: 2px;
+			margin: 0 0;
+			margin-bottom: 5px;
+			margin-top: 2px;
+			background: white;
+			display: none;
+		}
+		.one-burger{
+			display: none;
+		}
+			.one-burger{
+				height: auto;
+				display: block;
+				background: black
+			}
+			
+			
+			.burg-menu{
+				display: none;
+			}
+			.search{
+				display: none;
+			}
+			.e:hover{
+				background: lightgray;
+				color: black;
+			}
+			.togl{
+				display: block;
+			}
+			hr{
+				display: block;
 			}
 		}

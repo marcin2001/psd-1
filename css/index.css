@@ -185,6 +185,8 @@ html,body{
 			width: 100%;
 			height:auto;
 			min-height: 300px;
+			display: flex;
+			justify-content: center;
 		}
 		.face1{
 			width: 23%;
@@ -193,7 +195,10 @@ html,body{
 			float: left;
 			min-width: 300px;
 		}
-		@media screen and (max-width: 1335px){
+		@media screen and (max-width: 1130px){
+			.cont-face{
+				display: block;
+			}
 			
 			.face1{
 				
@@ -300,7 +305,7 @@ html,body{
 			height: 44px;
 			background: #009688;
 			border-radius: 50%;
-			font-size: 26px;
+			font-size: 27px;
 			font-weight: 400;
 			color: white;
 		  	padding: 5px 8px;
@@ -355,10 +360,10 @@ html,body{
 			width: 33.33333%;
 			height: auto;
 			float: left;
-			border: px solid black
+			border: px solid black;
 		}
 		.ul-bas:hover{
-			box-shadow: 0px 0px 10px 1px gray;
+			box-shadow: 0px 5px 10px  lightgray;
 		}
 		.ul-bas{
 			border: 1px solid #ccc;
@@ -415,7 +420,7 @@ html,body{
 			border-bottom: 1px solid #ccc;
 		
 		}
-		.li-h2{
+		.li-h22{
 			font-family: "Segoe UI",Arial,sans-serif;
 		    font-weight: 400;
 		    margin: 10px 0;
@@ -486,7 +491,7 @@ html,body{
 			.block-basic{
 				width: 100%
 			}
-			.work-our{
-
+			.ul-bas{
+				border: none;
 			}
 		}

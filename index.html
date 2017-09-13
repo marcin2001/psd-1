@@ -17,12 +17,11 @@
 		<a href="#" class="a1 a-oll">Logo</a>
 
 		<div class="one-burger" id="burg">
-		<a href="#" class="a2 a-oll gr e" id="a2">Team</a>
-		<a href="#" class="a3 a-oll gr e" id="a3">Work</a>
-		<a href="#" class="a4 a-oll gr e" id="a4">Price</a>
-		<a href="#" class="a5 a-oll gr e" id="a5">Contact</a>
+		<a href="#team" class="a2 a-oll gr e" id="a2">Team</a>
+		<a href="#work" class="a3 a-oll gr e" id="a3">Work</a>
+		<a href="#price" class="a4 a-oll gr e" id="a4">Price</a>
 		<div class="burg-menu">
-		<a href="#" class="a6 a-oll gr">Dropdown</a>
+		<div href="#" class="a6 a-oll gr">Dropdown</div>
 		<div class="bur">
 		<a class="link1 lin1 ">Link</a>
 		<a class="link2 lin1 ">Link</a>
@@ -40,7 +39,7 @@
 		<img src="css/foto/tt.jpg" class='img1'>
 		<div class="block-learn">LEARN W3.CSS</div>
 	</div>
-	<div class="team">
+	<div class="team" id="team">
 		<h2 class="our">OUR TEAM</h2>
 		<p class="p1">Meet the team - our office rats:</p>
 		<div class="cont-face">
@@ -66,7 +65,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="work">
+	<div class="work" id="work">
 		<div class="work-our">
 			<h2 class="o-work">Our Work</h2>
 			<p class="about-work">
@@ -109,7 +108,7 @@
 		
 	</div>
 	<div class="add">+</div>
-	<div class="pricing">
+	<div class="pricing" id="price">
 		<h2 class="pric">PRICING</h2>
 		<p class="pric-p">Choose a pricing plan that fits your needs.</p>
 		<br>
@@ -241,12 +240,19 @@
 				a2.style.display = 'block';
 				a3.style.display = 'block';
 				a4.style.display = 'block';
-				a5.style.display = 'block';
 				a6.style.display = 'block';
 			}
 		}
 		x.addEventListener('click' , tog)
-
+		a2.addEventListener('click' , function(){
+			document.getElementById('team').style.top = '0px'
+		})
+		a3.addEventListener('click' , function(){
+			document.getElementById('work').style.top = '0px'
+		})
+		a4.addEventListener('click' , function(){
+			document.getElementById('price').style.top = '0px'
+		})
 	</script>
 </body>
 </html>

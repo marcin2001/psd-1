@@ -215,7 +215,9 @@
 		</div>
 		</div>
 	</div>
-	<div class="i"></div>
+	<footer>
+		<h4 class="follow">Follow Us</h4>
+	</footer>
 
 	<script type="text/javascript">
 		var x = document.getElementById('togl');
@@ -227,12 +229,13 @@
 		var a4 = document.getElementById('a4');
 		var a5 = document.getElementById('a5');
 		var a6 = document.getElementById('a6');
+		
 		function tog() {
-			if(burg.style.display === 'none'){
-				burg.style.display = 'block'
+			if(burg.style.display === 'block'){
+				burg.style.display = 'none'
 			}
 			else{
-				burg.style.display = 'none'
+				burg.style.display = 'block'
 			}
 			if(burg.style.display === 'block'){
 				a2.style.display = 'block';
@@ -243,6 +246,7 @@
 			}
 		}
 		x.addEventListener('click' , tog)
+
 	</script>
 </body>
 </html>
